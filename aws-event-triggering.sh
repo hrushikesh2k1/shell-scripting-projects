@@ -46,6 +46,9 @@ aws lambda add-permission $endpoint \
   --principal s3.amazonaws.com \
   --source-arn arn:aws:s3:::$bucket_name
 
+# wait for lambda registration to propagate
+sleep 3
+
 # Create SNS Topic
 sns_topic_arn=$(aws sns create-topic $endpoint --name $sns_topic_name --output text)
 
@@ -60,7 +63,7 @@ aws s3api put-bucket-notification-configuration $endpoint \
   --bucket $bucket_name \
   --notification-configuration "{
     \"LambdaFunctionConfigurations\": [{
-      \"LambdaFunctionArn\": \"arn:aws:lambda:$aws_region:000000000000:function:$lambda_func_name\",
+      \"LambdaFunctionArn\": \"arn:aws:lambda:us-east-1:000000000000:function:$lambda_func_name\",
       \"Events\": [\"s3:ObjectCreated:*\"]}]}
   "
 
