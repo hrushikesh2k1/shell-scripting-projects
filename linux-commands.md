@@ -19,7 +19,7 @@ Example Output:
 
 Linux ubuntu-server 5.15.0-107-generic #118-Ubuntu SMP x86_64 GNU/Linux
 
-########################################################################
+---
 🧠 hostnamectl
 Usage:
 
@@ -35,7 +35,8 @@ Static hostname: devops-node
 Operating System: Ubuntu 22.04.3 LTS
 Kernel: Linux 5.15.0-107-generic
 Architecture: x86-64
-#####################################################################
+
+---
 🧠 uptime
 Usage:
 
