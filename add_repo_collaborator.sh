@@ -3,7 +3,7 @@
 # Author: Hrushikesh Boora
 # version: v1
 #
-#
+# usage: set github personal access token as environment variable
 #
 #
 ###############################
