@@ -1,7 +1,0 @@
-| Command                                    | Meaning                                                                                                                                                                   |
-| ------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `#!/bin/bash`                              | This tells the system to run the script using the **bash** shell.                                                                                                         |
-| `echo "====== CPU Usage ======"`           | Prints a header for better readability in the terminal.                                                                                                                   |
-| `top -bn1`                                 | Runs the **top** command in **batch mode (-b)** for **one iteration (-n1)** — meaning it runs once and exits instead of opening an interactive display.                   |
-| `grep "Cpu(s)"`                            | Filters only the line that contains CPU statistics (e.g., `Cpu(s): 10.3%us, 1.2%sy, 0.0%ni, 88.5%id...`).                                                                 |
-| `awk '{print "CPU Usage: " 100 - $8 "%"}'` | **awk** splits the line into columns by spaces. `$8` usually represents the **idle CPU percentage** (`id` column). Subtracting it from 100 gives **used CPU percentage**. |
