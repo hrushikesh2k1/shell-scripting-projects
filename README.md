@@ -1,2 +1,2 @@
 # shell-scripting-projects
-Shell scripts used DevOps Engineer in their day routine. This repo is under progress.
+Shell scripts used by DevOps Engineer in their day routine. This repo is under progress.
